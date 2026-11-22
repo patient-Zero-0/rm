@@ -20,6 +20,8 @@ add_executable(filter test/opencv2/filter.cpp)
 add_executable(erode test/opencv2/erode.cpp)
 add_executable(dilate test/opencv2/dilate.cpp)
 add_executable(sobel test/opencv2/sobel.cpp)
+add_executable(canny test/opencv2/canny.cpp)
+add_executable(findContours test/opencv2/findContours.cpp)
 
 
 
@@ -33,3 +35,5 @@ target_link_libraries(filter ${OpenCV_LIBS})
 target_link_libraries(erode ${OpenCV_LIBS})
 target_link_libraries(dilate ${OpenCV_LIBS})
 target_link_libraries(sobel ${OpenCV_LIBS})
+target_link_libraries(canny ${OpenCV_LIBS})
+target_link_libraries(findContours ${OpenCV_LIBS})
