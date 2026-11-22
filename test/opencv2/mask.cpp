@@ -1,6 +1,15 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
+/*所谓掩码，就是⼀个只有0和1的矩阵，图像与掩码进⾏逻辑与、或运算，可以实现抠图、图像融合等功能。
+在OpenCV中，像素逻辑运算函数有四个原型，分别代表逻辑与、或、异或、⾮运算。
+void cv::bitwise_and(src1, src2, dst, mask)
+void cv::bitwise_or(src1, src2, dst, mask)
+void cv::bitwise_xor(src1, src2, dst, mask)
+void cv::bitwise_nor(src, dst, mask)
+*/
+
+
 
 int main()
 {

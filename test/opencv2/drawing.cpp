@@ -14,4 +14,23 @@ int main() {
 
     cv::imshow("src", src);
     cv::waitKey();
+
+    cv::Rect rect(0,0,100,100);
+
+    std::cout << "isEmpty: " << rect.empty() << std::endl;
+    std::cout << "x: " << rect.x << std::endl;
+    std::cout << "y: " << rect.y << std::endl;
+    std::cout << "height: " << rect.height << std::endl;
+    std::cout << "width: " << rect.width << std::endl;
+    std::cout << "area: " << rect.area() << std::endl;
+
+
+    std::cout << "tl(top-left): " << rect.tl() << std::endl;
+    std::cout << "dr(bottom-right): " << rect.br() << std::endl;
+
+    cv::RotatedRect rectangle(cv::Point2f(0,0), cv::Size2f(100,200), 30);
+    std::cout << "包裹轮廓的最小正矩形: " << rectangle.boundingRect() << std::endl;
+    std::cout << "center: " << rectangle.center << std::endl;
+    std::cout << "size: " << rectangle.size << std::endl;
+    std::cout << "angle: " << rectangle.angle << std::endl;
 }
